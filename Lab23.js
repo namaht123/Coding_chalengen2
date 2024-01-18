@@ -14,5 +14,5 @@ const output = `${type.startsWith('_Delayed') ? '�' : ''}${type.replaceAll(
 console.log(output);
 }
 
-// Nam sửa ở đây nhé 
+// Nam sửa ở đây nhé  hehehee 
 //siduchsdichs

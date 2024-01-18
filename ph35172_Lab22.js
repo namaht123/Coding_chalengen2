@@ -18,3 +18,4 @@ document.querySelector('button').addEventListener('click', function(){
     }
 });
 //Loi no run
+// Loi phần này nef 

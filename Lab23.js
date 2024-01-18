@@ -13,3 +13,4 @@ const output = `${type.startsWith('_Delayed') ? '�' : ''}${type.replaceAll(
 )} ${getCode(from)} ${getCode(to)} (${time.replace(':', 'h')})`.padStart(36);
 console.log(output);
 }
+/// Sửa trên này nhé 

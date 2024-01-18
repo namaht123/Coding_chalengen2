@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Lab24.js"></script>
 </head>
 <body>
+
+    <script>
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').addEventListener('click', function () {
+  const text = document.querySelector('textarea').value;
+
+  const rows = text.split('\n');
+
+  for (const [i, row] of rows.entries()) {
+    const words = row.toLowerCase().trim().split('_');
+    const camelCase = words.map((word, index) =>
+      index === 0 ? word : word.replace(word[0], word[0].toUpperCase())
+    );
+
+    const output = camelCase.join('');
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+  }
+});
+
+    </script>
     
 </body>
 </html>
